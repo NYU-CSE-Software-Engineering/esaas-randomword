@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.6.6'
+ruby '~> 3.3'
 
-gem 'sinatra'
+gem 'sinatra', '~> 4.0'
+gem 'sinatra-contrib'
+gem 'rackup'
+gem 'puma'
 
 group :development, :test do
-  gem 'byebug', '5.0.0'
+  gem 'byebug'
   gem 'rerun'
 end
